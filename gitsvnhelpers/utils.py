@@ -11,7 +11,7 @@ import config
 
 
 def basename():
-    return popen('basename $PWD', False, False)[1][0]
+    return os.path.basename(os.getcwd())
 
 
 def is_git():
